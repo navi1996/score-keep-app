@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Project2</string>
+    <string name="teamA">Team A</string>
+    <string name="teamB">Team B</string>
+    <string name="six"> +6</string>
+    <string name="four"> +4</string>
+    <string name="three"> +3</string>
+
+</resources>

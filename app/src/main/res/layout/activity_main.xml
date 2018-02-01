@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.project2.project2.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="horizontal"
+
+        >
+        
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+       <TextView
+           style="@style/styleTeamName"
+           android:text="@string/teamA"
+
+           />
+
+
+        <TextView
+
+            style="@style/styleScore"
+            android:id="@+id/tv_countA"
+            />
+        <Button
+           style="@style/styleButton"
+            android:text="@string/six"
+            android:onClick="addSixForTeamA"
+            />
+        <Button
+            style="@style/styleButton"
+            android:text="@string/four"
+            android:onClick="addFourForTeamA"
+            />
+        <Button
+            style="@style/styleButton"
+            android:text="@string/three"
+            android:onClick="addThreeForTeamA"
+            />
+
+
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                style="@style/styleTeamName"
+                android:text="@string/teamB"
+               />
+            <TextView
+                android:id="@+id/tv_countB"
+                style="@style/styleScore"
+                />
+            <Button
+                style="@style/styleButton"
+                android:text="@string/six"
+                android:onClick="addSixForTeamB"
+                />
+            <Button
+                style="@style/styleButton"
+                android:text="@string/four"
+                android:onClick="addFourForTeamB"
+                />
+            <Button
+                style="@style/styleButton"
+                android:text="@string/three"
+                android:onClick="addThreeForTeamB"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:gravity="center"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="resetButton"
+            android:text="Reset"
+            android:textSize="20dp"
+            android:background="#FFFF01"/>
+    </LinearLayout>
+
+</LinearLayout>
